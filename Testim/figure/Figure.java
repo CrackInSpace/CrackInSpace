@@ -8,7 +8,10 @@ public class Figure {
         System.out.println("Тестим пакеты");
         triangle t = new triangle();
         t.info();
+        t.q();
         quadrangle q = new quadrangle();
         q.info();
+        q.info();
+        System.out.println("Закончили проверку");
     }
 }
