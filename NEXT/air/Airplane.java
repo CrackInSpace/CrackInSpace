@@ -8,7 +8,11 @@ public class Airplane extends Vehicle_main implements AIR {
     private double fuel = 4900.0;
     private int maxHight = 17;
     private double maxDistance = 4700.0;
-    private String flight = "Civilian";
+    private String flight;
+
+    {//инициализатор конструктора
+        this.flight = "Civilian";
+    }
 
     public Airplane(String name) {
         this.name = name;

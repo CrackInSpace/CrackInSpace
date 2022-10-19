@@ -8,8 +8,11 @@ public class Helicopter extends Vehicle_main implements AIR {
     private double fuel = 1500.0;
     private int maxHight = 6;
     private double maxDistance = 1700.0;
-    private String flight = "Civilian";
+    private String flight;
 
+    {
+        this.flight = "Civilian";
+    }
     public Helicopter(String name) {
         this.name = name;
     }
