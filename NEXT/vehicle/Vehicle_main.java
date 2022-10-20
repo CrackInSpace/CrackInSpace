@@ -7,11 +7,16 @@ package vehicle;
         import earth.Car;
         import earth.EARTH;
         import earth.Truck;
+        import water.Boat;
+        import water.Ship;
+        import water.Submarine;
+        import water.WATER;
 
         import java.util.ArrayList;
         import java.util.HashMap;
 
 public class Vehicle_main {
+    public String materialBOAT = new String("Резина");
 
     public static void main(String[] arg) {
         AIR boing = new Airplane("Боинг");
@@ -45,7 +50,20 @@ public class Vehicle_main {
         System.out.println("\n" + skoda  + "\nДистанция которую сможет преодолеть за 24 часа: " + skoda.distance() + " км\\ч.");
         //Анологично можно еще добавить что нибудь прикольное
         EARTH copter = new Truck(60, 200, 4, "Wild MEN", "BLACK");
-        System.out.println("\n" + copter  + "\nДистанция которую сможет преодолеть за 24 часа: " + copter.distance() + " км\\ч.");
+        System.out.println("\n" + copter  + "\nДистанция которую сможет преодолеть за 24 часа: " + copter.distance() + " км\\ч.\n");
+        WATER jet = new Boat(110, 50, 4, "Jet", "Голубой");
+        System.out.print(jet);
+        jet.goal();
+        WATER miter = new Boat(57, 160, 14, "Milter", "Black");
+        System.out.print(miter);
+        miter.goal();
+        WATER milka = new Ship(45, 700, 200, "Kotlin", "Grey");
+        System.out.printf("Название флота: %s.\nСкорость передвижение: %s км\\ч.\nКоличество людей: %s.\nКоличество топлива: %s литров.\nЦвет: %s.",
+                ((Ship) milka).getName(), ((Ship) milka).getSpeed(), ((Ship) milka).getPassengerPlaces(), ((Ship) milka).getFuel(), ((Ship) milka).getColor());
+        System.out.println("\n" + ((Ship) milka).gun());
+        WATER batisk = new Submarine(100, 400, 60, "Subik", "Black");
+        System.out.printf("Название флота: %s.\nСкорость передвижение: %s км\\ч.\nКоличество людей: %s.\nКоличество топлива: %s литров.\nЦвет: %s.",
+                ((Submarine) batisk).getName(), ((Submarine) batisk).getSpeed(), ((Submarine) batisk).getPassengerPlaces(), ((Submarine) batisk).getFuel(), ((Submarine) batisk).getColor());
+        System.out.println("\n" + ((Submarine) batisk).gun());
     }
 }
-
