@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Test {
+public class Factorial {
     public static void main(String[] args) {
         System.out.println(factorial(50));
         System.out.println(factorial(42));
