@@ -47,14 +47,14 @@ class Fib {
         }
     }
 }
-class Memomizacia {
+class Memoizacia {
     public static void main(String[] args) {
         System.out.println(fibonacci(9));
     }
 
     static Map<Integer, BigInteger> cache = new HashMap<>();
 
-    //Медленный метод, но благодаря мемомизации он стал лучше и больше кушает памяти
+    //Медленный метод, но благодаря мемоизации он стал лучше и больше кушает памяти
     public static BigInteger fibonacci(int n){
         cache.put(0,BigInteger.ZERO);
         cache.put(1,BigInteger.ONE);
