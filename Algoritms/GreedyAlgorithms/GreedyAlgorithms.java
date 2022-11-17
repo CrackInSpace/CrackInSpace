@@ -8,6 +8,7 @@ public class GreedyAlgorithms {
         int[] digits = new int[]{3, 1, 7, 9, 9, 5};
         System.out.println(maxNumberFromDigits(digits));
     }
+    
     private static StringBuilder maxNumberFromDigits(int[] digits){
         Arrays.sort(digits);
         StringBuilder stringBuilder = new StringBuilder();
