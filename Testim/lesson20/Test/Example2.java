@@ -13,6 +13,7 @@ public class Example2 {
         Comparator<User> userAgeComparator = new UserAgeComparator();
 
         Map<User, String> map = new TreeMap<>(userComparator.thenComparing(userAgeComparator).thenComparing(User::getName));
+//        Map<User, String> map = new TreeMap<>(Comparator.comparing(User::getAge).thenComparing(User::getSalary).thenComparing(User::getName));
         map.put(user1, "text1");
         map.put(user2, "text2");
 
