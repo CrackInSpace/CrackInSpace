@@ -20,7 +20,7 @@ public class GreedyAlgorithms2 {
             } else {
                 stops++;
                 currentFuel = fuelCapacity;
-                a--;//Чтобы не перескакивать на следующую не отняв текущее
+                i--;//Чтобы не перескакивать на следующую не отняв текущее
             }
         }
         return stops;
